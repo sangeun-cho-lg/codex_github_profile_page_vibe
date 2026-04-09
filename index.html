@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홍길동 | 개발자 포트폴리오</title>
+    <meta
+      name="description"
+      content="문제를 구조적으로 풀어내는 개발자 홍길동의 포트폴리오 사이트입니다."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=SUIT:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script defer src="./assets/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="홈으로 이동">
+          <span class="brand-mark">HG</span>
+          <span class="brand-text">Hong Gildong</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="메뉴 열기"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+          <a href="#home" data-nav-link>Home</a>
+          <a href="#about" data-nav-link>About</a>
+          <a href="#skills" data-nav-link>Skills</a>
+          <a href="#projects" data-nav-link>Projects</a>
+          <a href="#contact" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Developer Portfolio</p>
+            <h1>
+              제품과 사용자 사이의 간격을
+              <span>정교하게 줄이는 개발자</span>
+            </h1>
+            <p class="hero-description">
+              복잡한 요구사항을 선명한 구조로 바꾸고, 읽기 쉬운 코드와 안정적인
+              사용자 경험으로 연결합니다. 프론트엔드부터 협업 프로세스까지,
+              팀이 오래 가져갈 수 있는 결과를 만드는 데 집중합니다.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">프로젝트 보기</a>
+              <a class="button button-secondary" href="#contact">연락하기</a>
+            </div>
+          </div>
+          <div class="hero-panel reveal" aria-hidden="true">
+            <div class="panel-card panel-card-large">
+              <p class="panel-label">Focus</p>
+              <p class="panel-title">Frontend Engineering</p>
+              <p class="panel-body">
+                UI 구조화, 성능 최적화, 협업 가능한 컴포넌트 설계를 좋아합니다.
+              </p>
+            </div>
+            <div class="panel-card panel-card-small">
+              <p class="panel-label">Now Building</p>
+              <p class="panel-title">사용자 중심 웹 경험</p>
+            </div>
+            <div class="panel-card panel-card-accent">
+              <p class="panel-label">Strength</p>
+              <p class="panel-title">명확한 커뮤니케이션과 실행력</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>기술만이 아니라 흐름까지 설계합니다</h2>
+          </div>
+          <div class="about-grid">
+            <article class="about-copy reveal">
+              <p>
+                새로운 기능을 만들 때는 화면만 보지 않고, 사용자가 어떤 맥락에서
+                이 기능을 만나고 어떤 지점에서 망설일지까지 함께 고민합니다.
+              </p>
+              <p>
+                유지보수가 쉬운 구조와 팀 내 공유 가능한 기준을 중요하게 생각하며,
+                빠르게 만드는 것과 오래 가는 것을 동시에 만족시키는 방법을 찾는
+                편입니다.
+              </p>
+            </article>
+            <div class="about-points">
+              <article class="info-card reveal">
+                <h3>문제 정의</h3>
+                <p>막연한 요청을 구현 가능한 단위로 쪼개고 우선순위를 정리합니다.</p>
+              </article>
+              <article class="info-card reveal">
+                <h3>협업 방식</h3>
+                <p>디자인, 기획, 개발 사이의 언어를 맞추는 문서화와 커뮤니케이션에 강합니다.</p>
+              </article>
+              <article class="info-card reveal">
+                <h3>개발 관점</h3>
+                <p>읽기 쉬운 코드, 명확한 상태 흐름, 예측 가능한 인터랙션을 선호합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-muted">
+        <div class="container section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>실무에서 자주 꺼내 쓰는 도구들</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Frontend</h3>
+              <ul class="tag-list" aria-label="프론트엔드 기술">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Styling & UX</h3>
+              <ul class="tag-list" aria-label="스타일링 및 사용자 경험 기술">
+                <li>Responsive UI</li>
+                <li>Accessibility</li>
+                <li>Design Systems</li>
+                <li>Motion</li>
+                <li>Figma Handoff</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Collaboration</h3>
+              <ul class="tag-list" aria-label="협업 도구">
+                <li>Git / GitHub</li>
+                <li>Notion</li>
+                <li>Jira</li>
+                <li>Code Review</li>
+                <li>Technical Writing</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Quality</h3>
+              <ul class="tag-list" aria-label="품질 관련 기술">
+                <li>Performance</li>
+                <li>Testing Basics</li>
+                <li>Semantic Markup</li>
+                <li>Web Standards</li>
+                <li>Maintainability</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>구조와 결과가 함께 보이는 작업들</h2>
+          </div>
+          <div id="project-list" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-shell reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>함께 만들고 싶은 일이 있다면 연결해 주세요</h2>
+          </div>
+          <p class="contact-copy">
+            아래 링크는 플레이스홀더로 구성되어 있어 이후 실제 주소로 바로 교체할
+            수 있습니다. 협업 제안, 포트폴리오 피드백, 가벼운 네트워킹 모두
+            환영합니다.
+          </p>
+          <div id="contact-list" class="contact-links"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
